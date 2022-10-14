@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// task 1
+// Создать компонент в котором будет блок, инпут и кнопка, в инпут необходимо вводить цвет фона блока и по нажатию на кнопку менять цвет фона при этом очищая инпут
 
-function App() {
+// task 2
+// Создайте поле ввода, которое принимает возраст. Отобразите текст("Добро пожаловать" или "Вход запрещен") в зависимости от того, является ли пользователь совершеннолетним или нет. Используйте хук для состояния.м
+
+// task 3
+// Дан массив с объектами.
+// Создайте компонент ProductList и ProductItem.
+// Компонент ProductList должен отображать все элементы массива (можно использовать метод массива). Компонент ProductItem должен принимать пропсами элемент объекта и отображать каждое его свойство.
+
+import React, { useState } from "react";
+import Task1 from "./components/Task1";
+
+const App = () => {
+  // let age = prompt("Enter your age:");
+  // const [agePrompt, setAge] = useState(age);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Task1 /> */}
+      {/* {agePrompt >= 18 ? <h2>Добро Пожаловать!</h2> : <h2>Вход запрещён!</h2>} */}
     </div>
   );
-}
+};
 
 export default App;
